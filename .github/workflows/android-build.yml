@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '17' # Matches JDK 17 recommendation in README
+          java-version: '21' # CHANGED FROM '17' TO '21'
 
       - name: Install Dependencies
         run: |
