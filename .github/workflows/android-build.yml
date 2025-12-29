@@ -7,6 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Added permissions block to allow release creation
+    permissions:
+      contents: write
+      
     steps:
       - name: Checkout Source
         uses: actions/checkout@v4
