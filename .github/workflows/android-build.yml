@@ -46,10 +46,10 @@ jobs:
           }' android/app/build.gradle
 
       - name: Build APK (Debug)
-        run: cd android && ./gradlew assembleDebug
+        run: cd android && ./gradlew assembleDebug --stacktrace --info
 
       - name: Build AAB (Release)
-        run: cd android && ./gradlew bundleRelease
+        run: cd android && ./gradlew bundleRelease --stacktrace --info
 
       - name: Get Short Commit Hash
         id: vars
